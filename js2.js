@@ -1,8 +1,52 @@
+const express = require("express");
+const app = express();
+app.use(express.static("./public"));
+
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
+
+app.post("/", function(req, res) {
+  res.sendFile(__dirname + "/index2.html");
+});
+
+app.listen(process.env.PORT || 3000, function() {
+  console.log(`Server is running on port ${process.env.PORT || 3000}.`);
+});
+// FIRST PROJECT
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Add event listener to the image element
+  var image = document.getElementById("pfp");
+  image.addEventListener("click", function() {
+    window.location.href = "https://codepen.io/Angie-W/full/zYMNMPQ";
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+      var image = document.getElementById("pfp");
+      image.addEventListener("click", function() {
+        window.location.href = "https://codepen.io/Angie-W/full/zYMNMPQ";
+      });
+    });
+
+// FIRST PROJECT
+//let image = document.getElementById("pfp");
+
+/*
+image.addEventListener("click", function() {          window.location.replace("https://codepen.io/Angie-W/full/zYMNMPQ");
+  //https://codepen.io/Angie-W/full/zYMNMPQ
+});
+*/
+
+// SECOND PROJECT
+/*
 let button = document.getElementById("back");
 button.addEventListener("click", function() {         window.location.replace("https://codepen.io/Angie-W/full/oNQBdLw");
   //https://codepen.io/Angie-W/full/zYMNMPQ (info)
   //https://codepen.io/Angie-W/full/oNQBdLw (flix)
 });
+*/
+
 
   function KO() {
     alert("Knives Out is a 2019 American mystery film written and directed by Rian Johnson, who also serves as a co-producer. It follows master detective Benoit Blanc investigating the death of the patriarch of a wealthy, dysfunctional family.");
