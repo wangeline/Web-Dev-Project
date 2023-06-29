@@ -1,6 +1,7 @@
 body{
-  background-color:  #CD71E9;
+  /*background-color:  #99c1de;*/
 }
+
 #back {
   cursor: pointer;
   height: 35px;
@@ -57,7 +58,7 @@ iframe {
   }
 
   #showsDiv {
-    background-color: green;
+    background-color: #BDEFD1;
     width: 45%;
     position: absolute;
     right: 0; 
@@ -78,4 +79,11 @@ iframe {
   padding-top: 0;
   display: block;
 
+}
+
+#recDiv {
+  background-color: #E7C8F9;
+  margin-top: 1350px;
+  margin-left: 2.8%;
+  margin-right: 2.7%;
 }
